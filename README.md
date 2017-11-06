@@ -26,3 +26,9 @@ $ EGG_SERVER_ENV=prod npm start
 - Use `npm run autod` to auto detect dependencies upgrade
 - Use `npm run lint` to check code style
 - Use `npm test` to run unit test
+
+
+### 其他
+
+
+[Nunjucks文档](https://mozilla.github.io/nunjucks/cn/templating.html)

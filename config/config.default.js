@@ -10,7 +10,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '123456';
 
   config.siteFile = {
-    '/favicon.ico': fs.readFileSync(path.join(appInfo.baseDir, 'app/public/favicon.png')),
+    '/favicon.ico': fs.readFileSync(path.join(appInfo.baseDir, 'app/public/favicon.ico')),
   };
 
   config.news = {

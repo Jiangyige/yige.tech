@@ -1,0 +1,465 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: #333;
+  font-family: "SF Pro Text", "SF Pro Display", "SF Pro Icons", 'PingHei', 'PingFang SC', "Helvetica Neue", "Helvetica", "Arial", sans-serif, 'Microsoft YaHei', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  max-width: 1004px;
+  width: 94%;
+  margin: 0 auto;
+  background-image: url(https://hicaicai.b0.upaiyun.com/x/ioVAOkKKlmAXFxhYEaxd.svg);
+  background-repeat: no-repeat;
+  background-position-x: 210px;
+  background-position-y: 40px;
+  min-height: 490px;
+}
+
+.main {
+  max-width: 1004px;
+  width: 94%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #333;
+}
+
+.nav {
+  max-width: 1004px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.nav a {
+  color: #333;
+}
+
+.nav li {
+  line-height: 32px;
+}
+
+.nav a:hover {
+  color: #de3429;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  list-style: none;
+  float: left;
+  padding-right: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #de3429;
+}
+
+a:hover {
+  transition: all 0.3s;
+  text-decoration: underline;
+}
+
+.info {
+  padding-top: 100px;
+}
+
+.info a {
+  font-weight: normal;
+}
+
+.site_title {
+  color: #101010;
+  font-weight: 600;
+}
+
+.social {
+  padding-top: 50px;
+}
+
+.social a {
+  padding-right: 10px;
+  color: #101010;
+  text-decoration: none;
+}
+
+.fa {
+  font-size: 18px !important;
+}
+
+.work {
+  max-width: 1004px;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.work p {
+  line-height: 28px;
+}
+
+.read_more p {
+  line-height: 28px;
+}
+
+.read_more a {
+  padding-top: 20px;
+}
+
+.links {
+  font-size: 14px;
+}
+
+.work h2 {
+  color: #101010;
+  padding-bottom: 10px;
+}
+
+.p_links {
+  padding-top: 20px;
+}
+
+.p_links h4 {
+  color: #000;
+  font-weight: normal;
+}
+
+.p_links p {
+  color: #000;
+  margin: 0;
+}
+
+.p_links li {
+  float: inherit;
+}
+
+.work_photo {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.read_more {
+  max-width: 1004px;
+  width: 94%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.experience {
+  max-width: 1004px;
+  width: 94%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.experience h2 {
+  color: #101010;
+  padding-bottom: 30px;
+}
+
+.experience p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  line-height: 28px;
+}
+
+.year {
+  padding-top: 10px;
+}
+
+.year h3 {
+  font-weight: bold;
+  color: #101010;
+  font-size: 16px;
+  margin: 0;
+}
+
+.company p {
+  font-weight: normal;
+  padding-bottom: 15px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.company a {
+  padding-top: 5px;
+}
+
+.about {
+  max-width: 1004px;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.about h2 {
+  color: #101010;
+}
+
+.photos {
+  padding-top: 50px;
+}
+
+.works {
+  padding-top: 50px;
+}
+
+.column {
+  max-width: 1004px;
+  width: 94%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  padding-top: 80px;
+}
+
+.column h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.column p {
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #333;
+}
+
+.p_img {
+  width: 100%;
+}
+
+.p_img_3 {
+  width: 100% !important;
+}
+
+.p_img_2 {
+  width: 100%;
+}
+
+.title {
+  max-width: 1004px;
+  margin: 0 auto;
+  padding: 80px 0px 100px 0px;
+  text-align: left;
+  width: 94%;
+}
+
+.list {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-weight: 200;
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.p_title {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.p_title p {
+  font-weight: 400;
+  color: #101010;
+  font-size: 24px;
+  margin: 0;
+}
+
+.description {
+  font-weight: 200;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0.3px;
+  line-height: 26px;
+  max-width: 880px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.location {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+  font-weight: 200;
+}
+
+.img_info {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+  font-weight: 200;
+}
+
+.pagination {
+  max-width: 1004px;
+  width: 94%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.button {
+  float: left;
+  border: 1px solid #101010;
+  border-radius: 30px;
+  color: #101010;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.discourse_author {
+  font-size: 12px;
+  color: #ababab;
+}
+
+.level {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.level-right {
+  float: left;
+}
+
+.level-left {
+  float: left;
+}
+
+.level-item {
+  padding: 5px;
+}
+
+.button:hover {
+  background-color: #101010;
+  color: #fff;
+  transition: 0.3s all;
+  text-decoration: none;
+}
+
+.footer {
+  width: 94%;
+  max-width: 1004px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  font-size: 14px;
+  color: #999;
+}
+
+.post {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.post h1 {
+  color: #101010;
+}
+
+.content img {
+  width: 100%;
+}
+
+.subtitle {
+  padding: 0;
+}
+
+.content {
+  max-width: 1004px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.disqus {
+  max-width: 1004px;
+  margin: 0 auto;
+  width: 94%;
+}
+
+.post_title {
+  margin: 0;
+  padding-top: 50px;
+}
+
+.subtitle {
+  padding-top: 10px;
+}
+
+.content p {
+  color: #333;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.w_p_100 {
+  width: 70%;
+}
+
+.is-disabled {
+  display: none;
+}
+
+.details {
+  width: 94%;
+  margin: 0 auto;
+  max-width: 1004px;
+}
+
+.site_logo {
+  width: 32px;
+  border-radius: 32px;
+  float: left;
+}
+
+@media only screen and (max-width: 770px) {
+  .is-5 {
+    margin: 0px!important;
+    padding-right: inherit!important;
+    padding-left: inherit!important;
+  }
+  .is-6 {
+    margin: 0px!important;
+    padding-right: inherit!important;
+    padding-left: inherit!important;
+  }
+  .is-4 {
+    margin: 0px!important;
+    padding-right: inherit!important;
+    padding-left: inherit!important;
+  }
+  .is-10 {
+    margin: 0px!important;
+    padding-right: inherit!important;
+    padding-left: inherit!important;
+  }
+  .is-3 {
+    margin: 0px!important;
+    padding-right: inherit!important;
+    padding-left: inherit!important;
+  }
+  .columns img {
+    width: 90%;
+  }
+  .w_p_100 {
+    width: 100%;
+  }
+}
