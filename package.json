@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "egg": "^1.4.0",
+    "egg-scripts": "^2.1.0",
     "egg-view-nunjucks": "^2.1.2",
     "moment": "^2.18.1"
   },
@@ -24,6 +25,8 @@
   },
   "scripts": {
     "start": "node index.js",
+    "prd-start": "egg-scripts start --daemon --port=80",
+    "prd-stop": "egg-scripts stop",
     "dev": "egg-bin dev",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
