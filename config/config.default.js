@@ -9,9 +9,9 @@ module.exports = appInfo => {
   // should change to your own
   config.keys = appInfo.name + '123456';
 
-  config.siteFile = {
-    '/favicon.ico': fs.readFileSync(path.join(appInfo.baseDir, 'app/public/favicon.ico')),
-  };
+  // config.siteFile = {
+  //   '/favicon.ico': fs.readFileSync(path.join(appInfo.baseDir, 'app/public/favicon.ico')),
+  // };
 
   config.news = {
     pageSize: 30,
