@@ -82,5 +82,9 @@ module.exports = appInfo => {
     },
   };
 
+  config.static = {
+    gzip: true
+  };
+
   return config;
 };
