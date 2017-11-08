@@ -4,7 +4,8 @@ module.exports = app => {
   class PhotoController extends app.Controller {
     * index() {
       const ctx = this.ctx;
-      yield ctx.render('photo/index.njk');
+      const photos = this.config.photos;
+      yield ctx.render('photo/index.njk', { photos });
     }
 
     * list() {

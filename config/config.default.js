@@ -18,6 +18,62 @@ module.exports = appInfo => {
     serverUrl: 'https://hacker-news.firebaseio.com/v0',
   };
 
+  // photo页面数据
+  config.cdn = 'http://7xnwd9.com1.z0.glb.clouddn.com/';
+
+  config.photos = [{
+      title: '“故事，开始于两座城～”',
+      subTitle: 'December 12, 2015',
+      location: 'Nanjing,Shanghai',
+      imgs: [
+        'nanjing.jpg',
+        'shanghai.jpg'
+      ]
+    },
+    {
+      title: '“杂。”',
+      subTitle: 'December 12, 2015',
+      location: '田子坊,Shanghai',
+      imgs: [
+        'tianzifang-1.jpg',
+        'tianzifang-2.jpg',
+        'tianzifang-3.jpg'
+      ]
+    },
+    {
+      title: '“First Christmas。”',
+      subTitle: 'December 25, 2015',
+      location: '中山路,Nanjing',
+      imgs: [
+        'merry.jpg'
+      ]
+    },
+    {
+      title: '“好汉达成。\（￣︶￣）/”',
+      subTitle: 'January 1, 2016',
+      location: '八达岭,Beijing',
+      imgs: [
+        'greatwall-1.jpg',
+        'greatwall-2.jpg'
+      ]
+    },
+    {
+      title: '“我爱北京天安门！”',
+      subTitle: 'January 1, 2016',
+      location: '天安门,Beijing',
+      imgs: [
+        'tiananmen.jpg'
+      ]
+    }
+  ]
+
+  config.photos.forEach((e, i) => {
+    e.imgs.forEach((img, j) => {
+      // 默认为  非webp格式
+      config.photos[i].imgs[j] = config.cdn + img;
+    });
+  });
+
   config.view = {
     defaultViewEngine: 'nunjucks',
     mapping: {
