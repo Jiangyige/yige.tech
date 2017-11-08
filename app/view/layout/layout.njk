@@ -34,19 +34,23 @@
 
     <title>{% block title %}Memories made with love by yige{% endblock %}</title>
     <script>
+      var isSupportWebP = false;
+      (function() {
         var WebP = new Image();
         WebP.onload = WebP.onerror = function() {
-          var imgFilter = WebP.height != 2 ?
-            'imageView2/2/w/1920/h/1280/q/90|imageslim' :
-            'imageMogr2/thumbnail/1920x1280/format/webp/interlace/1/blur/1x0/quality/90|imageslim';
-
-          document.querySelectorAll('.photos img').forEach(function(e) {
-            var src = e.getAttribute('data-src');
-            e.setAttribute('src', src + '?' + imgFilter);
-          });
+          isSupportWebP = WebP.height == 2;
+          //var imgFilter = WebP.height != 2 ?
+          //  'imageView2/2/w/1920/h/1280/q/90|imageslim' :
+          //  'imageMogr2/thumbnail/1920x1280/format/webp/interlace/1/blur/1x0/quality/90|imageslim';
+          //
+          //document.querySelectorAll('.photos img').forEach(function(e) {
+          //  var src = e.getAttribute('data-src');
+          //  e.setAttribute('src', src + '?' + imgFilter);
+          //});
         };
 
         WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+      })();
     </script>
   </head>
   <body>
@@ -74,7 +78,8 @@
 
     <script src="https://cdn.bootcss.com/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/zooming/1.2.5/zooming.min.js"></script>
-
+    <script src="/public/js/lazyload.min.js"></script>
+    <script src="/public/js/photo.js"></script>
   </body>
 </html>
 

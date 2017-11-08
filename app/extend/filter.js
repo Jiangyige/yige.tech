@@ -11,15 +11,15 @@ exports.imgList = imgs => {
   let str = '';
   switch (length) {
     case 1:
-      return `<img class="p_img" data-src="${imgs[0]}" data-action="zoom" style="cursor: -webkit-zoom-in;">`
+      return `<img class="p_img lazy" data-src="${imgs[0]}" data-action="zoom" style="cursor: -webkit-zoom-in;">`
     case 2:
       imgs.forEach(img => {
-        str = str + `<img class="p_img_2 is-6" data-src="${img}" data-action="zoom" style="cursor: -webkit-zoom-in;">`;
+        str = str + `<img class="p_img_2 is-6 lazy" data-src="${img}" data-action="zoom" style="cursor: -webkit-zoom-in;">`;
       });
       return str;
     case 3:
       imgs.forEach(img => {
-        str = str + `<img class="p_img_3 is-4" data-src="${img}" data-action="zoom" style="cursor: -webkit-zoom-in;">`;
+        str = str + `<img class="p_img_3 is-4 lazy" data-src="${img}" data-action="zoom" style="cursor: -webkit-zoom-in;">`;
       });
       return str;
     default:
