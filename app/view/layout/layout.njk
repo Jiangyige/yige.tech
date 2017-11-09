@@ -76,10 +76,14 @@
       </div>
     </div>
 
+    {# 公用JS #}
     <script src="https://cdn.bootcss.com/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/zooming/1.2.5/zooming.min.js"></script>
-    <script src="/public/js/lazyload.min.js"></script>
-    <script src="/public/js/photo.js"></script>
+
+    {# 页面自有JS #}
+    {% block customJs %}
+      <script src="https://cdn.bootcss.com/zooming/1.2.5/zooming.min.js"></script>
+      <script src="/public/js/lazyload.min.js"></script>
+    {% endblock %}
   </body>
 </html>
 
