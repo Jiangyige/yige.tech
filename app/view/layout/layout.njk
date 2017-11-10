@@ -60,7 +60,9 @@
     </script>
   </head>
   <body>
-    {# <div class="main">
+
+    {% block navi %}
+    <div class="main">
       <div class="nav">
         <ul>
           <li><a href="/"><img class="site_logo" src="/public/favicon/apple-icon-180x180.png"></a></li>
@@ -70,16 +72,23 @@
           <li><a href="mailto:jiangyige1990@gmail.com">Email</a></li>
         </ul>
       </div>
-    </div> #}
+    </div>
+    {% endblock %}
 
+    
     {% block content %}{% endblock %}
 
 
-    {# <div class="footer">
+    {% block footer %}
+    <div class="footer">
       <div class="container has-text-centered">
         <p>Designed and Coded by © <a href="http://www.yige.tech">yige</a></p>
+        <p>Cdn by <a href="https://www.upyun.com">upyun</a></p>
+        <a href="https://www.upyun.com"><img src="/public/img/upyun.png" width="50"></a>
       </div>
-    </div> #}
+    </div>
+    {% endblock %}
+
 
     {# 公用JS #}
     <script src="https://cdn.bootcss.com/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
