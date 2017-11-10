@@ -6,6 +6,12 @@
     <meta name="description" content="jiangyige">
 
     <link rel="stylesheet" href="/public/css/style.css">
+
+    {% block customCss %}
+    
+    {% endblock %}
+
+
     {# TODO 改为内联加快速度 #}
     {# <link rel="stylesheet" href="https://unpkg.com/griddd@1.0.2/dist/griddd.min.css"> #}
     {# favicon #}
@@ -54,7 +60,7 @@
     </script>
   </head>
   <body>
-    <div class="main">
+    {# <div class="main">
       <div class="nav">
         <ul>
           <li><a href="/"><img class="site_logo" src="/public/favicon/apple-icon-180x180.png"></a></li>
@@ -64,17 +70,16 @@
           <li><a href="mailto:jiangyige1990@gmail.com">Email</a></li>
         </ul>
       </div>
+    </div> #}
 
-      {% block content %}{% endblock %}
-
-    </div>
+    {% block content %}{% endblock %}
 
 
-    <div class="footer">
+    {# <div class="footer">
       <div class="container has-text-centered">
         <p>Designed and Coded by © <a href="http://www.yige.tech">yige</a></p>
       </div>
-    </div>
+    </div> #}
 
     {# 公用JS #}
     <script src="https://cdn.bootcss.com/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
