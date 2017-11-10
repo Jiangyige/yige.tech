@@ -68,7 +68,7 @@ $(function () {
     duration: 500
   })
     .setPin(".container")
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   // tween
@@ -76,7 +76,7 @@ $(function () {
     duration: 500
   })
     .setTween(tl)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
   
   
@@ -99,7 +99,7 @@ $(function () {
   // build scene
   var scene = new ScrollMagic.Scene({offset: 100, duration: 300, tweenChanges: true })
     .setTween(tween)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
   
   
@@ -112,7 +112,7 @@ $(function () {
   // build scene
   new ScrollMagic.Scene({ triggerElement: "#trigger-img-1", duration: 100 })
     .setTween(tween1)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
   
   var tween2 = TweenMax.to(".J-img-2", 1, { css: { bottom: "+=400", opacity: 1 }, ease: Strong.easeInOut });
@@ -120,7 +120,7 @@ $(function () {
   // build scene
   new ScrollMagic.Scene({ triggerElement: "#trigger-img-2", duration: 100 })
     .setTween(tween2)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
   
   var tween3 = TweenMax.to(".J-img-3", 1, { css: { bottom: "+=400", opacity: 1 }, ease: Strong.easeInOut });
@@ -128,7 +128,7 @@ $(function () {
   // build scene
   new ScrollMagic.Scene({ triggerElement: "#trigger-img-3", duration: 100 })
     .setTween(tween3)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 
