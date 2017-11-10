@@ -1,5 +1,4 @@
 html {
-  height: 1674px;
   font-weight: 100;
 }
 
@@ -9,20 +8,35 @@ body {
 }
 
 p {
-  font-size: 64px;
-  color: white;
-  letter-spacing: 10px;
+  font-size: 14px;
+  color: #111;
+}
+
+.maxwidth {
+  max-width: 1004px;
 }
 
 .nextSection {
-  height: 800px;
-  background: lightslategrey;
+  padding: 20px auto;
+  min-height: 300px;
   position: relative;
   z-index: 5;
-  display: flex;
+  text-align: center;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
+.nextSection img {
+  /* margin: 0 auto; */
+}
+
+.nextSection .title {
+  max-width: 1004px;
+  width: 94%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
 
 .container {
   height: 100vh;
@@ -91,10 +105,66 @@ video {
   position: absolute;
   top: 30%;
   width: 100%;
+  text-align: center;
 }
 
 .moji-container svg {
   overflow: visible;
   display: block;
   margin: 0 auto;
+}
+.text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #351F11;
+  letter-spacing: 10px;
+  position: relative;
+  right: 1900px;
+}
+
+#people {
+  width: 100%;
+  max-width: 350px;
+  opacity: 0;
+}
+
+.J-img-1, .J-img-2, .J-img-3 {
+  position: relative;
+  bottom: -400px;
+  opacity: 0;
+}
+
+
+
+.locationSection {
+  margin-top: 40px;
+  padding: 20px 0;
+  min-height: 300px;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.location-text {
+  font-size: 24px; 
+  font-weight: bold;
+  color: #351F11;
+}
+
+.baidumap {
+   margin: 20px auto;
+   width: 80%;
+   max-width: 1004px;
+   height: 30vh;
+}
+
+
+
+
+@media only screen and (min-width: 770px) {
+  .nextSection .title {
+    padding: 100px 0;
+    font-size: 20px; 
+  }
 }
