@@ -7,21 +7,23 @@
   <div class="photos">
     <div class="column">
       <h1>Photos</h1>
-      <p>It's a fun thing to shoot the next moment. 📷</p>
+      <p>Best Memories always shine. ✨</p>
+      <p>最高な思い出がピカピカ! ✨</p>
+      <p>最好的回忆永远闪亮于心。 ✨</p>
     </div>
     <div>
 
       {% for photo in photos %}
+        <div class="title">
+          <h4 class="subtitle">{{ photo.subTitle }}</h4>
+          <h3 class="p_title"><p>{{ photo.title }}</p></h3>
+          <p class="location">{{ photo.location }}</p>
+        </div>
 
         <div class="columns">
           <div class="list">
             {{ photo.imgs | imgList | safe}}
           </div>
-        </div>
-        <div class="title">
-          <h4 class="subtitle">{{ photo.subTitle }}</h4>
-          <h3 class="p_title"><p>{{ photo.title }}</p></h3>
-          <p class="location">{{ photo.location }}</p>
         </div>
 
       {% endfor %}

@@ -16,7 +16,17 @@ p {
   max-width: 1004px;
 }
 
+
+.tips {
+  position: absolute;
+  bottom: 1%;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+}
+
 .nextSection {
+  background-color: white;
   padding: 20px auto;
   min-height: 300px;
   position: relative;
@@ -65,6 +75,7 @@ p {
   height: 100%;
   overflow: visible;
   display: block;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
 }
 
 .svg-container svg text {
@@ -72,9 +83,21 @@ p {
 }
 
 .svg-container svg mask rect {
-  /*   fill: rgba(255, 255, 255, 0.8); */
   fill: white;
+
+  /* fill: linear-gradient(to bottom right, #002f4b, #dc4225) */
+  /* &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .6;
+  } */
 }
+
 
 .svg-container svg>rect {
   fill: white;
@@ -119,26 +142,25 @@ video {
   color: #351F11;
   letter-spacing: 10px;
   position: relative;
-  right: 1900px;
+  transform: translateX(1900px);
 }
 
 #people {
   width: 100%;
   max-width: 350px;
-  opacity: 0;
+  transform: translateY(600px);
 }
 
 .J-img-1, .J-img-2, .J-img-3 {
   position: relative;
-  bottom: -400px;
-  opacity: 0;
+  transform: translateY(400px);
 }
 
 
 
 .locationSection {
-  margin-top: 40px;
-  padding: 20px 0;
+  /* margin-top: 40px; */
+  padding: 60px 0 20px;
   min-height: 300px;
   position: relative;
   z-index: 5;
@@ -160,6 +182,46 @@ video {
 }
 
 
+.jump {
+  animation: move .5s ease-in-out infinite alternate;
+}
+
+@-moz-keyframes move {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@-o-keyframes move {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
 
 
 @media only screen and (min-width: 770px) {
@@ -168,3 +230,4 @@ video {
     font-size: 20px; 
   }
 }
+
