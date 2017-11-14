@@ -2,7 +2,7 @@
 
 {% block customCss %} 
   <link rel="stylesheet" href="/public/css/wedding.css">
-  <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" async href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
 {% endblock %}
 
 {% block title %} wedding {% endblock %}
@@ -175,13 +175,13 @@
         <div class="location-text">蒋一戈 & 狄芸</div>
         <div class="location-text">恭候您的到来</div>
       </div>
-      <img src="/public/img/people.svg" width="300">
+      <img class="lazy" data-src="/public/img/people.svg" width="300">
 
       <div style="padding: 20px;">
         <p><a href="./photo" style="color: #de3429; font-weight: 600; font-size: 16px;">查看更多照片?</a></p>
         <p class="jump">▼</p>
         <a href="./photo">
-          <img src="/public/favicon/apple-icon-180x180.png" style="border-radius: 50%; width: 90px;"></img>
+          <img class="lazy" data-src="http://7xnwd9.com1.z0.glb.clouddn.com/apple-icon-180x180.png" style="border-radius: 50%; width: 90px;"></img>
         </a>
         <p>Designed and Coded by © <a href="http://www.yige.tech">yige</a></p>
       </div>
