@@ -13,10 +13,10 @@ module.exports = appInfo => {
   //   '/favicon.ico': fs.readFileSync(path.join(appInfo.baseDir, 'app/public/favicon.ico')),
   // };
 
-  config.news = {
-    pageSize: 30,
-    serverUrl: 'https://hacker-news.firebaseio.com/v0',
-  };
+  // config.news = {
+  //   pageSize: 30,
+  //   serverUrl: 'https://hacker-news.firebaseio.com/v0',
+  // };
 
   // photo页面数据
   config.cdn = 'http://7xnwd9.com1.z0.glb.clouddn.com/';
@@ -63,6 +63,41 @@ module.exports = appInfo => {
       location: '天安门,Beijing',
       imgs: [
         'tiananmen.jpg'
+      ]
+    },
+    {
+      title: '“你在拍什么？”',
+      subTitle: 'January 3, 2016',
+      location: '故宫,Beijing',
+      imgs: [
+        'zijincheng.jpg'
+      ]
+    },
+    {
+      title: '“元宵节小聚。”',
+      subTitle: 'February 5, 2016',
+      location: '夫子庙,Nanjing',
+      imgs: [
+        'yuanxiaojie.jpg'
+      ]
+    },
+    {
+      title: '“さくら満開。”',
+      subTitle: 'March 19, 2016',
+      location: '南林,Nanjing',
+      imgs: [
+        'sakura1.jpg',
+        'sakura2.JPG',
+        'sakura3.JPG'
+      ]
+    },
+    {
+      title: '“お誕生日おめでとう。”',
+      subTitle: 'May 3, 2016',
+      location: 'Home,Nanjing',
+      imgs: [
+        'birth1.jpg',
+        'birth2.jpg'
       ]
     }
   ]
