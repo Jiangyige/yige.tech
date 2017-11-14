@@ -23,7 +23,7 @@ p {
 
 .tips {
   position: absolute;
-  bottom: 1%;
+  bottom: 10%;
   z-index: 10;
   text-align: center;
   width: 100%;
@@ -79,7 +79,7 @@ p {
   height: 100%;
   overflow: visible;
   display: block;
-  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  /* background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%); */
 }
 
 .svg-container svg text {
