@@ -22,6 +22,11 @@ exports.imgList = imgs => {
         str = str + `<img class="p_img_3 is-4 lazy" data-src="${img}" data-action="zoom" style="cursor: -webkit-zoom-in;">`;
       });
       return str;
+    case 4:
+      imgs.forEach(img => {
+        str = str + `<img class="p_img_4 is-6 lazy" data-src="${img}" data-action="zoom" style="cursor: -webkit-zoom-in;">`;
+      });
+      return str;
     default:
       break;
   }

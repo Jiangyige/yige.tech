@@ -188,6 +188,9 @@ $(function () {
 
 
       var tweenImg2 = new TimelineMax()
+        .add(TweenMax.to($('.container'), 0.2, {
+          opacity: 0
+        }), 1)  
         .add(TweenMax.set($('#trigger-img-2 h1'), {
           className: "animated fadeInUp"
         }), 1)
