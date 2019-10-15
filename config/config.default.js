@@ -19,7 +19,8 @@ module.exports = appInfo => {
   // };
 
   // photo页面数据
-  config.cdn = 'http://7xnwd9.com1.z0.glb.clouddn.com/';
+  // config.cdn = 'http://7xnwd9.com1.z0.glb.clouddn.com/';
+  config.cdn = 'http://yigecdn.broad-ark.com/';
 
   config.photos = [{
       title: '“故事，开始于两座城～”',
